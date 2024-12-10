@@ -1,0 +1,226 @@
+
+
+:root {
+    /* Colors */
+    --White:#ffffff;
+    --Cyan: #2ab2af;
+    --Cyen-light:#4abebd;
+    --Bright-Yellow: #c0df34;
+    --Light-Gray: #e5eff5;
+    --Grayish-Blue: #98a6bd;
+    --body-bg:#e6eff6;
+    --text-color:#a9acb3;
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Karla", sans-serif;   
+}
+
+html { 
+    font-size: 16px;
+}
+body {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--body-bg);
+}
+ul {
+    list-style: none;
+    opacity: .7;
+}
+main.container {
+    width: 310px;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    overflow: hidden;
+    
+
+
+}
+
+.section {
+    width: 310px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 30px 20px;
+    color: var(--White);
+
+}
+.section.first {
+    height: 270px;
+    background-color: var(--White);
+   
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.section.medel {
+    background-color: var(--Cyan);
+    
+}
+.section.last {
+    background-color: var(--Cyen-light);
+    
+}
+.first h1 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--Cyan);
+}
+
+.first p.money-back{
+    color: var(--Bright-Yellow);
+    font-weight: 700;
+    font-size: 15px;
+
+}
+.description {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--text-color);
+    font-weight: 400;
+
+}
+.section.last ul li p {
+    color: var(--Light-Gray);
+    font-size: 13px;
+    font-weight: 400;
+    opacity: .9;
+    letter-spacing: 1px;
+   
+}
+.section.medel h2,
+.section.last h2 {
+    font-size: 1.1rem;
+    color: var(--Light-Gray);
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.section.medel .price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.section.medel .price h2 {
+    margin: 0;
+    font-size: 1.7rem;
+}
+.section.medel .price span {
+    opacity: .5;
+
+}
+.section.medel p {
+    color: var(--Light-Gray);
+    margin-bottom: 10px;
+}
+.btn {
+    width: 240px;
+    margin: auto;
+    height: 45px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background-color: var(--Bright-Yellow);
+    color: var(--White);
+    cursor: pointer;
+}
+.section.last ul li p {
+    font-size: 14px;
+    line-height: 1.4;
+}
+/* media */
+
+@media  (min-width:687px) {
+    main.container {
+        width: 620px;
+    }
+    .section {
+        padding: 40px;
+    }
+    .section.first {
+        width: 100%;
+        height: 215px;
+    }
+    .content {
+
+        flex-direction: row;
+
+    }
+    .section.medel,
+    .section.last{
+        width: 100%;
+        height: 260px;
+
+    }
+    .first h1 {
+        font-size: 1.5rem;
+
+    }
+    .first p.money-back {
+        font-size: 1.15rem;
+
+    }
+    .description {
+        font-size: 1rem;
+
+    }
+    .section.last ul li p {
+        font-size: .9rem;
+        letter-spacing: 0;
+    }
+    .section.medel h2,
+    .section.last h2 {
+    font-size: 1.3rem;
+    }
+    .section.medel .price h2 {
+        font-size: 1.9rem;
+    }
+    .btn {
+        height: 50px;
+    }
+
+    
+}
+
+
+
+
+
+/* footer */
+.footer {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+}
+.attribution {
+    color: #333;
+    font-size: 12px;
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--Cyan);
+}
